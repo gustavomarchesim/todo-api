@@ -10,6 +10,6 @@ export class UserController {
     @Post('register')
     @HttpCode(HttpStatus.OK)
     register(@Body() dto: CreateUserDto){
-        return this.userService.register(dto);
+        return this.userService.createUser(dto);
     }
 }
